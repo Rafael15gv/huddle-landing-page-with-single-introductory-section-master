@@ -1,0 +1,139 @@
+:root {
+  /* ## Color */
+
+/* ### Primary */
+
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-image: url(/images/bg-mobile.svg);
+  background-size:  contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.container {
+  
+  /* background-color: gray; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img {
+  /* background-color: blue; */
+  margin-bottom: 30px;
+}
+.img__logo {
+  width: 100px;
+  /* background-color: aquamarine; */
+  margin-bottom: 50px;
+  
+}
+
+.img__img {
+
+  /* background-color: yellowgreen; */
+  width: 100%;
+}
+
+
+.content {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.content__titulo, .content__parrafo {
+  text-align: center;
+}
+/* .content__parrafo {
+  text-align: center;
+} */
+.content__btn {
+  background-color: white;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 4px  4px rgba(0, 0, 0, .4);
+  color: var(--Violet);
+  font-family: "Poppins", sans-serif;
+  transition: transform .3s ease-in-out;
+}
+
+.content__btn:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  transform: scale(1.1);
+}
+
+.content__redes {
+  /* background-color: rebeccapurple; */
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+}
+
+
+@media (width >= 450px){
+  body {
+    /* background-color: black; */
+    background-image: url(/images/bg-desktop.svg);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    padding: 20px 80px;
+  }
+  .img {
+    /* background-color: blue;
+    margin-bottom: 30px; */
+    width: 100%;
+  }
+
+  .img__logo {
+width: 200px;
+
+  }
+  .content {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .content__titulo, .content__parrafo {
+    text-align: left;
+    padding-right: 100px;
+  }
+
+  .content__redes {
+    align-self: flex-end;
+  }
+
+}
